@@ -24,6 +24,8 @@
 </template>
 
 <script>
+import { createApp, handleError } from 'vue';
+
 export default {
 	// data
 	data() {
@@ -49,6 +51,36 @@ export default {
 			this.notes.splice(i, 1);
 		},
 	},
+
+	beforeCreate() {
+		console.log('beforCreate 1 ');
+	},
+
+	created() {
+		console.log('Created');
+	},
+
+	beforeMount() {
+		console.log('beforeMount');
+	},
+	mounted() {
+		console.log('mounted');
+	},
+	beforeUpdate() {
+		console.log('beforeUpdate');
+	},
+	updated() {
+		console.log('updated');
+	},
+
+	beforeUnmount() {
+		console.log('beforeUnmounted');
+	},
+
+	unmounted() {
+		console.log('uchdi ');
+	},
+
 	computed: {
 		// addNotes() {
 		// 	console.log('double');
