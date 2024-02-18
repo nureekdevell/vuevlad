@@ -12,6 +12,9 @@
 		<option value="US">US</option>
 		<option value="UZ">UZ</option>
 		<option value="KZ">KZ</option>
+		<option value="US">US</option>
+		<option value="UZ">UZ</option>
+		<option value="KZ">KZ</option>
 	</select>
 </template>
 
